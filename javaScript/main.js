@@ -27,12 +27,19 @@ let burger = document.getElementById("burger");
 let headcontain = document.getElementById("headcontain");
 let closeburger = document.getElementById("closeburger");
 let clickscount = 0;
+let navformoplinks = document.getElementById("navformoplinks");
+let navformop = document.getElementById("navformop");
 burger.addEventListener("click", function () {
   if (clickscount % 2 == 0) {
     headcontain.classList.add("menu-active");
+    navformoplinks.style.left = "0px";
+    navformop.style.visibility = "visible";
     clickscount++;
   } else {
     headcontain.classList.remove("menu-active");
+    navformoplinks.style.left = "-300px";
+    navformop.style.visibility = "hidden";
+
     clickscount++;
   }
 });
