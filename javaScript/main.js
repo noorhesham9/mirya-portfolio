@@ -43,3 +43,22 @@ burger.addEventListener("click", function () {
     clickscount++;
   }
 });
+
+let showsub = document.getElementById("showsub");
+// navformoplinks
+// <!-- enablesubBlog -->
+// <!-- disablesubBLog -->
+let clickscount2 = 0;
+showsub.addEventListener("click", function () {
+  if (clickscount2 % 2 == 0) {
+    navformoplinks.classList.add("enablesubBlog");
+    navformoplinks.classList.remove("disablesubBLog");
+
+    clickscount2++;
+  } else {
+    navformoplinks.classList.remove("enablesubBlog");
+    navformoplinks.classList.add("disablesubBLog");
+
+    clickscount2++;
+  }
+});
