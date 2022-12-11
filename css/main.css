@@ -76,6 +76,7 @@ a {
 }
 header {
   position: fixed;
+  z-index: 5;
   width: 100%;
   -webkit-transition: 0.6s;
   transition: 0.6s;
@@ -436,7 +437,6 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  z-index: -3;
 }
 .landing .layout {
   position: absolute;
@@ -444,4 +444,97 @@ header {
   opacity: 0.6;
   width: 100%;
   height: 100%;
+}
+.landing .container {
+  height: 100%;
+}
+.landing .container .marg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin-left: 14vw;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.landing .container .marg .hi {
+  color: #bfbebe;
+  font-size: 23px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin: 0;
+}
+.landing .container .marg .name {
+  color: #fff;
+  font-size: 87px;
+  font-weight: 900;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+.landing .container .marg .iam {
+  color: #bfbebe;
+  font-size: 23px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin: 0;
+}
+.landing .container .marg .iam .changedTiltle {
+  color: #cf9c63;
+  font-family: "Open Sans", sans-serif;
+  text-transform: capitalize;
+  font-size: 23px;
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin: 0;
+}
+.landing .container .marg a {
+  width: 130px;
+  color: #fff;
+  background-color: #cf9c63;
+  z-index: 2;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 15px 16px;
+  margin-top: 50px;
+}
+.landing .container .marg a span {
+  position: relative;
+  z-index: 2;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.landing .container .marg a:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  z-index: 1;
+  background-color: #232222;
+  -webkit-transform: translate(-50%, -50%) scale(0) rotate(45deg);
+          transform: translate(-50%, -50%) scale(0) rotate(45deg);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.landing .container .marg a:hover {
+  color: var(--subcolor-orange);
+}
+.landing .container .marg a:hover:before {
+  -webkit-transform: translate(-50%, -50%) scale(1) rotate(45deg);
+          transform: translate(-50%, -50%) scale(1) rotate(45deg);
 }
