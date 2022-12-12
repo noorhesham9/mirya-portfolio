@@ -64,6 +64,7 @@ showsub.addEventListener("click", function () {
   }
 });
 
+// typed fun typed.js alredy prepared....
 new Typed("#typed", {
   strings: ["Wep Developer", "Wep Designer", "Ui/ Ux designer"],
   typeSpeed: 40,
@@ -72,6 +73,12 @@ new Typed("#typed", {
   backSpeed: 40,
   showCursor: false,
 });
+
+//كود التايب فنكشن بس فيه مشاكل ف استخدمنا الجاهز
+
+//**************
+
+// *****************
 
 // let changedTiltle = document.querySelector(".changedTiltle");
 // let time = 40;
