@@ -63,28 +63,12 @@ showsub.addEventListener("click", function () {
   }
 });
 
-// let first_word = [
-//   "W",
-//   "e",
-//   "b",
-//   "",
-//   "D",
-//   "w",
-//   "v",
-//   "e",
-//   "l",
-//   "o",
-//   "p",
-//   "e",
-//   "r",
-// ];
-// console.log(first_word[2]);
 let changedTiltle = document.querySelector(".changedTiltle");
 let time = 40;
 let word, i;
 
 function add_ui_ux(word) {
-  word = "Ui/ Ux designer";
+  word = "Ui/ Ux designer.";
   i = 0;
 
   var typeWriter = setInterval(function () {
@@ -96,7 +80,7 @@ function add_ui_ux(word) {
   }, time);
 }
 function add_web_d(word) {
-  word = "Web developer";
+  word = "Web developer.";
   i = 0;
 
   var typeWriter = setInterval(function () {
@@ -108,7 +92,7 @@ function add_web_d(word) {
   }, time);
 }
 function add_web_des(word) {
-  word = "Web designer";
+  word = "Web designer.";
   i = 0;
 
   var typeWriter = setInterval(function () {
@@ -145,5 +129,4 @@ function repeat() {
   setTimeout(remove, 7500);
 }
 repeat();
-
 setInterval(repeat, 9000);

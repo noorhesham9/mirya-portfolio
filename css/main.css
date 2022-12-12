@@ -34,6 +34,11 @@ ul {
   margin-right: auto;
 }
 
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+}
 /* small */
 @media (min-width: 768px) {
   .container {
@@ -444,14 +449,12 @@ header {
   opacity: 0.6;
   width: 100%;
   height: 100%;
+  top: 0;
 }
 .landing .margcont {
   overflow: hidden;
 }
-.landing .container {
-  height: 100%;
-}
-.landing .container .marg {
+.landing .marg {
   position: absolute;
   height: 100%;
   max-width: 100%;
@@ -467,15 +470,16 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100%;
 }
-.landing .container .marg .hi {
+.landing .marg .hi {
   color: #bfbebe;
   font-size: 23px;
   letter-spacing: 2px;
   font-weight: 600;
   margin: 0;
 }
-.landing .container .marg .name {
+.landing .marg .name {
   color: #fff;
   font-size: 87px;
   font-weight: 900;
@@ -483,23 +487,22 @@ header {
   text-transform: uppercase;
   margin: 10px 0;
 }
-.landing .container .marg .iam {
+.landing .marg .iam {
   color: #bfbebe;
   font-size: 23px;
   letter-spacing: 2px;
   font-weight: 600;
   margin: 0;
 }
-.landing .container .marg .iam .changedTiltle {
+.landing .marg .iam .changedTiltle {
   color: #cf9c63;
   font-family: "Open Sans", sans-serif;
   text-transform: capitalize;
-  font-size: 23px;
   letter-spacing: 2px;
   font-weight: 600;
   margin: 0;
 }
-.landing .container .marg a {
+.landing .marg a {
   width: 130px;
   color: #fff;
   background-color: #cf9c63;
@@ -514,13 +517,13 @@ header {
   padding: 15px 16px;
   margin-top: 50px;
 }
-.landing .container .marg a span {
+.landing .marg a span {
   position: relative;
   z-index: 2;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-.landing .container .marg a:before {
+.landing .marg a:before {
   content: "";
   position: absolute;
   top: 50%;
@@ -534,10 +537,110 @@ header {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
-.landing .container .marg a:hover {
+.landing .marg a:hover {
   color: var(--subcolor-orange);
 }
-.landing .container .marg a:hover:before {
+.landing .marg a:hover:before {
   -webkit-transform: translate(-50%, -50%) scale(1) rotate(45deg);
           transform: translate(-50%, -50%) scale(1) rotate(45deg);
+}
+@media (max-width: 991px) {
+  .landing .marg {
+    margin-left: 0;
+  }
+}
+@media (max-width: 767px) {
+  .landing .marg .name {
+    font-size: 60px;
+  }
+}
+@media (max-width: 576px) {
+  .landing .marg .name {
+    font-size: 54px;
+  }
+  .landing .marg .iam {
+    font-size: 19px;
+    letter-spacing: 0;
+  }
+}
+.landing .divider {
+  position: absolute;
+  bottom: -7px;
+  left: 0;
+  width: 100%;
+}
+.landing .divider .wave {
+  width: 100%;
+  height: auto;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+section {
+  background-color: #232222;
+  padding: 70px 0 120px;
+  color: #fff;
+  width: 100%;
+}
+section .mainhead {
+  margin-bottom: 20px;
+  padding-bottom: 80px;
+  text-align: center;
+}
+section .mainhead h2 {
+  display: inline-block;
+  position: relative;
+  color: #fff;
+  letter-spacing: 1.5px;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: "Raleway", sans-serif;
+}
+section .mainhead h2 span {
+  position: absolute;
+  bottom: -19px;
+  left: 50%;
+  width: 15px;
+  height: 15px;
+  background-color: #191919;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+          transform: translateX(-50%) rotate(45deg);
+  -webkit-box-shadow: 0 1px 25px 1px #231a1d;
+          box-shadow: 0 1px 25px 1px #231a1d;
+}
+section .mainhead h2 span:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 5px;
+  height: 5px;
+  background-color: #cf9c63;
+}
+section .mainhead h2:before {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  width: 38%;
+  left: 0;
+  height: 2px;
+  background-color: #191919;
+}
+section .mainhead h2:after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  right: 0;
+  width: 38%;
+  height: 2px;
+  background-color: #191919;
+}
+
+.about-me .aboutme-content .image .about-image img {
+  border-radius: 6px;
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
 }
