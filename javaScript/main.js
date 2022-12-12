@@ -81,398 +81,69 @@ showsub.addEventListener("click", function () {
 // console.log(first_word[2]);
 let changedTiltle = document.querySelector(".changedTiltle");
 let time = 40;
+let word, i;
 
-let array_of_word1 = [];
-function wep_developer() {
-  setTimeout(() => {
-    array_of_word1.push("W");
-    changedTiltle.innerHTML = array_of_word1.join("");
-    setTimeout(() => {
-      array_of_word1.push("e");
-      changedTiltle.innerHTML = array_of_word1.join("");
-      setTimeout(() => {
-        array_of_word1.push("p");
-        changedTiltle.innerHTML = array_of_word1.join("");
-        setTimeout(() => {
-          array_of_word1.push(" ");
-          changedTiltle.innerHTML = array_of_word1.join("");
-          setTimeout(() => {
-            array_of_word1.push("D");
-            changedTiltle.innerHTML = array_of_word1.join("");
-            setTimeout(() => {
-              array_of_word1.push("e");
-              changedTiltle.innerHTML = array_of_word1.join("");
-              setTimeout(() => {
-                array_of_word1.push("v");
-                changedTiltle.innerHTML = array_of_word1.join("");
-                setTimeout(() => {
-                  array_of_word1.push("e");
-                  changedTiltle.innerHTML = array_of_word1.join("");
-                  setTimeout(() => {
-                    array_of_word1.push("l");
-                    changedTiltle.innerHTML = array_of_word1.join("");
-                    setTimeout(() => {
-                      array_of_word1.push("o");
-                      changedTiltle.innerHTML = array_of_word1.join("");
-                      setTimeout(() => {
-                        array_of_word1.push("p");
-                        changedTiltle.innerHTML = array_of_word1.join("");
-                        setTimeout(() => {
-                          array_of_word1.push("e");
-                          changedTiltle.innerHTML = array_of_word1.join("");
-                          setTimeout(() => {
-                            array_of_word1.push("r");
-                            changedTiltle.innerHTML = array_of_word1.join("");
+function add_ui_ux(word) {
+  word = "Ui/ Ux designer";
+  i = 0;
 
-                            //remove the word*****************************
-
-                            setTimeout(() => {
-                              array_of_word1.pop();
-                              changedTiltle.innerHTML = array_of_word1.join("");
-                              setTimeout(() => {
-                                array_of_word1.pop();
-                                changedTiltle.innerHTML =
-                                  array_of_word1.join("");
-                                setTimeout(() => {
-                                  array_of_word1.pop();
-                                  changedTiltle.innerHTML =
-                                    array_of_word1.join("");
-                                  setTimeout(() => {
-                                    array_of_word1.pop();
-                                    changedTiltle.innerHTML =
-                                      array_of_word1.join("");
-                                    setTimeout(() => {
-                                      array_of_word1.pop();
-                                      changedTiltle.innerHTML =
-                                        array_of_word1.join("");
-                                      setTimeout(() => {
-                                        array_of_word1.pop();
-                                        changedTiltle.innerHTML =
-                                          array_of_word1.join("");
-                                        setTimeout(() => {
-                                          array_of_word1.pop();
-                                          changedTiltle.innerHTML =
-                                            array_of_word1.join("");
-                                          setTimeout(() => {
-                                            array_of_word1.pop();
-                                            changedTiltle.innerHTML =
-                                              array_of_word1.join("");
-                                            setTimeout(() => {
-                                              array_of_word1.pop();
-                                              changedTiltle.innerHTML =
-                                                array_of_word1.join("");
-                                              setTimeout(() => {
-                                                array_of_word1.pop();
-                                                changedTiltle.innerHTML =
-                                                  array_of_word1.join("");
-                                                setTimeout(() => {
-                                                  array_of_word1.pop();
-                                                  changedTiltle.innerHTML =
-                                                    array_of_word1.join("");
-                                                  setTimeout(() => {
-                                                    array_of_word1.pop();
-                                                    changedTiltle.innerHTML =
-                                                      array_of_word1.join("");
-                                                    setTimeout(() => {
-                                                      array_of_word1.pop();
-                                                      changedTiltle.innerHTML =
-                                                        array_of_word1.join("");
-                                                    }, time);
-                                                  }, time);
-                                                }, time);
-                                              }, time);
-                                            }, time);
-                                          }, time);
-                                        }, time);
-                                      }, time);
-                                    }, time);
-                                  }, time);
-                                }, time);
-                              }, time);
-                            }, 700);
-                          }, time);
-                        }, time);
-                      }, time);
-                    }, time);
-                  }, time);
-                }, time);
-              }, time);
-            }, time);
-          }, time);
-        }, time);
-      }, time);
-    }, time);
+  var typeWriter = setInterval(function () {
+    changedTiltle.textContent += word[i];
+    i++;
+    if (i > word.length - 1) {
+      clearInterval(typeWriter);
+    }
   }, time);
 }
-function wep_designer() {
-  setTimeout(() => {
-    array_of_word1.push("W");
-    changedTiltle.innerHTML = array_of_word1.join("");
-    setTimeout(() => {
-      array_of_word1.push("e");
-      changedTiltle.innerHTML = array_of_word1.join("");
-      setTimeout(() => {
-        array_of_word1.push("p");
-        changedTiltle.innerHTML = array_of_word1.join("");
-        setTimeout(() => {
-          array_of_word1.push(" ");
-          changedTiltle.innerHTML = array_of_word1.join("");
-          setTimeout(() => {
-            array_of_word1.push("D");
-            changedTiltle.innerHTML = array_of_word1.join("");
-            setTimeout(() => {
-              array_of_word1.push("e");
-              changedTiltle.innerHTML = array_of_word1.join("");
-            }, time);
-            setTimeout(() => {
-              array_of_word1.push("s");
-              changedTiltle.innerHTML = array_of_word1.join("");
-              setTimeout(() => {
-                array_of_word1.push("i");
-                changedTiltle.innerHTML = array_of_word1.join("");
-                setTimeout(() => {
-                  array_of_word1.push("g");
-                  changedTiltle.innerHTML = array_of_word1.join("");
-                  setTimeout(() => {
-                    array_of_word1.push("n");
-                    changedTiltle.innerHTML = array_of_word1.join("");
-                    setTimeout(() => {
-                      array_of_word1.push("e");
-                      changedTiltle.innerHTML = array_of_word1.join("");
-                      setTimeout(() => {
-                        array_of_word1.push("r");
-                        changedTiltle.innerHTML = array_of_word1.join("");
+function add_web_d(word) {
+  word = "Web developer";
+  i = 0;
 
-                        //remove the word*****************************
+  var typeWriter = setInterval(function () {
+    changedTiltle.textContent += word[i];
+    i++;
+    if (i > word.length - 1) {
+      clearInterval(typeWriter);
+    }
+  }, time);
+}
+function add_web_des(word) {
+  word = "Web designer";
+  i = 0;
 
-                        setTimeout(() => {
-                          array_of_word1.pop();
-                          changedTiltle.innerHTML = array_of_word1.join("");
-                          setTimeout(() => {
-                            array_of_word1.pop();
-                            changedTiltle.innerHTML = array_of_word1.join("");
-                            setTimeout(() => {
-                              array_of_word1.pop();
-                              changedTiltle.innerHTML = array_of_word1.join("");
-                              setTimeout(() => {
-                                array_of_word1.pop();
-                                changedTiltle.innerHTML =
-                                  array_of_word1.join("");
-                                setTimeout(() => {
-                                  array_of_word1.pop();
-                                  changedTiltle.innerHTML =
-                                    array_of_word1.join("");
-                                  setTimeout(() => {
-                                    array_of_word1.pop();
-                                    changedTiltle.innerHTML =
-                                      array_of_word1.join("");
-                                    setTimeout(() => {
-                                      array_of_word1.pop();
-                                      changedTiltle.innerHTML =
-                                        array_of_word1.join("");
-                                      setTimeout(() => {
-                                        array_of_word1.pop();
-                                        changedTiltle.innerHTML =
-                                          array_of_word1.join("");
-                                        setTimeout(() => {
-                                          array_of_word1.pop();
-                                          changedTiltle.innerHTML =
-                                            array_of_word1.join("");
-                                          setTimeout(() => {
-                                            array_of_word1.pop();
-                                            changedTiltle.innerHTML =
-                                              array_of_word1.join("");
-                                            setTimeout(() => {
-                                              array_of_word1.pop();
-                                              changedTiltle.innerHTML =
-                                                array_of_word1.join("");
-                                              setTimeout(() => {
-                                                array_of_word1.pop();
-                                                changedTiltle.innerHTML =
-                                                  array_of_word1.join("");
-                                                setTimeout(() => {
-                                                  array_of_word1.pop();
-                                                  changedTiltle.innerHTML =
-                                                    array_of_word1.join("");
-                                                }, time);
-                                              }, time);
-                                            }, time);
-                                          }, time);
-                                        }, time);
-                                      }, time);
-                                    }, time);
-                                  }, time);
-                                }, time);
-                              }, time);
-                            }, time);
-                          }, time);
-                        }, 700);
-                      }, time);
-                    }, time);
-                  }, time);
-                }, time);
-              }, time);
-            }, time);
-          }, time);
-        }, time);
-      }, time);
-    }, time);
+  var typeWriter = setInterval(function () {
+    changedTiltle.textContent += word[i];
+    i++;
+    if (i > word.length - 1) {
+      clearInterval(typeWriter);
+    }
   }, time);
 }
 
-function uiux() {
-  setTimeout(() => {
-    array_of_word1.push("U");
-    changedTiltle.innerHTML = array_of_word1.join("");
-    setTimeout(() => {
-      array_of_word1.push("i");
-      changedTiltle.innerHTML = array_of_word1.join("");
-      setTimeout(() => {
-        array_of_word1.push("/");
-        changedTiltle.innerHTML = array_of_word1.join("");
-        setTimeout(() => {
-          array_of_word1.push(" ");
-          changedTiltle.innerHTML = array_of_word1.join("");
-          setTimeout(() => {
-            array_of_word1.push("U");
-            changedTiltle.innerHTML = array_of_word1.join("");
-            setTimeout(() => {
-              array_of_word1.push("x");
-              changedTiltle.innerHTML = array_of_word1.join("");
-              setTimeout(() => {
-                array_of_word1.push(" ");
-                changedTiltle.innerHTML = array_of_word1.join("");
-              }, time);
-              setTimeout(() => {
-                array_of_word1.push("D");
-                changedTiltle.innerHTML = array_of_word1.join("");
-                setTimeout(() => {
-                  array_of_word1.push("e");
-                  changedTiltle.innerHTML = array_of_word1.join("");
-                  setTimeout(() => {
-                    array_of_word1.push("s");
-                    changedTiltle.innerHTML = array_of_word1.join("");
-                    setTimeout(() => {
-                      array_of_word1.push("i");
-                      changedTiltle.innerHTML = array_of_word1.join("");
-                      setTimeout(() => {
-                        array_of_word1.push("g");
-                        changedTiltle.innerHTML = array_of_word1.join("");
-                        setTimeout(() => {
-                          array_of_word1.push("n");
-                          changedTiltle.innerHTML = array_of_word1.join("");
-                          setTimeout(() => {
-                            array_of_word1.push("e");
-                            changedTiltle.innerHTML = array_of_word1.join("");
-                            setTimeout(() => {
-                              array_of_word1.push("r");
-                              changedTiltle.innerHTML = array_of_word1.join("");
-                              //remove the word ***********************
-                              setTimeout(() => {
-                                array_of_word1.pop();
-                                changedTiltle.innerHTML =
-                                  array_of_word1.join("");
-                                setTimeout(() => {
-                                  array_of_word1.pop();
-                                  changedTiltle.innerHTML =
-                                    array_of_word1.join("");
-                                  setTimeout(() => {
-                                    array_of_word1.pop();
-                                    changedTiltle.innerHTML =
-                                      array_of_word1.join("");
-                                    setTimeout(() => {
-                                      array_of_word1.pop();
-                                      changedTiltle.innerHTML =
-                                        array_of_word1.join("");
-                                      setTimeout(() => {
-                                        array_of_word1.pop();
-                                        changedTiltle.innerHTML =
-                                          array_of_word1.join("");
-                                        setTimeout(() => {
-                                          array_of_word1.pop();
-                                          changedTiltle.innerHTML =
-                                            array_of_word1.join("");
-                                          setTimeout(() => {
-                                            array_of_word1.pop();
-                                            changedTiltle.innerHTML =
-                                              array_of_word1.join("");
-                                            setTimeout(() => {
-                                              array_of_word1.pop();
-                                              changedTiltle.innerHTML =
-                                                array_of_word1.join("");
-                                              setTimeout(() => {
-                                                array_of_word1.pop();
-                                                changedTiltle.innerHTML =
-                                                  array_of_word1.join("");
-                                                setTimeout(() => {
-                                                  array_of_word1.pop();
-                                                  changedTiltle.innerHTML =
-                                                    array_of_word1.join("");
-                                                  setTimeout(() => {
-                                                    array_of_word1.pop();
-                                                    changedTiltle.innerHTML =
-                                                      array_of_word1.join("");
-                                                    setTimeout(() => {
-                                                      array_of_word1.pop();
-                                                      changedTiltle.innerHTML =
-                                                        array_of_word1.join("");
-                                                      setTimeout(() => {
-                                                        array_of_word1.pop();
-                                                        changedTiltle.innerHTML =
-                                                          array_of_word1.join(
-                                                            ""
-                                                          );
-                                                        setTimeout(() => {
-                                                          array_of_word1.pop();
-                                                          changedTiltle.innerHTML =
-                                                            array_of_word1.join(
-                                                              ""
-                                                            );
-                                                          setTimeout(() => {
-                                                            array_of_word1.pop();
-                                                            changedTiltle.innerHTML =
-                                                              array_of_word1.join(
-                                                                ""
-                                                              );
-                                                          }, time);
-                                                        }, time);
-                                                      }, time);
-                                                    }, time);
-                                                  }, time);
-                                                }, time);
-                                              }, time);
-                                            }, time);
-                                          }, time);
-                                        }, time);
-                                      }, time);
-                                    }, time);
-                                  }, time);
-                                }, time);
-                              }, 700);
-                            }, time);
-                          }, time);
-                        }, time);
-                      }, time);
-                    }, time);
-                  }, time);
-                }, time);
-              }, time);
-            }, time);
-          }, time);
-        }, time);
-      }, time);
-    }, time);
+function remove() {
+  word = changedTiltle.textContent;
+  i = 0;
+  changedTiltle.textContent = word;
+  let nnn = changedTiltle.textContent.split("");
+
+  let typeWriter = setInterval(function () {
+    nnn.pop();
+
+    changedTiltle.textContent = nnn.join("");
+    i++;
+    if (i > word.length - 1) {
+      clearInterval(typeWriter);
+    }
   }, time);
 }
-wep_developer();
-setTimeout(wep_designer, 2200);
-setTimeout(uiux, 4400);
+function repeat() {
+  add_ui_ux();
+  setTimeout(remove, 1500);
+  setTimeout(add_web_d, 3000);
+  setTimeout(remove, 4500);
+  setTimeout(add_web_des, 6000);
+  setTimeout(remove, 7500);
+}
+repeat();
 
-setInterval(() => {
-  setTimeout(wep_developer, 0);
-  setTimeout(wep_designer, 2200);
-  setTimeout(uiux, 4400);
-}, 6600);
-// wep_developer();
-// wep_designer();
-// uiux();
+setInterval(repeat, 9000);
