@@ -1,4 +1,5 @@
 let haeder = document.getElementById("header");
+
 let myWidth = window.innerWidth;
 
 // window.onscroll = WindowSize;
@@ -63,70 +64,79 @@ showsub.addEventListener("click", function () {
   }
 });
 
-let changedTiltle = document.querySelector(".changedTiltle");
-let time = 40;
-let word, i;
+new Typed("#typed", {
+  strings: ["Wep Developer", "Wep Designer", "Ui/ Ux designer"],
+  typeSpeed: 40,
+  delaySpeed: 90,
+  loop: true,
+  backSpeed: 40,
+  showCursor: false,
+});
 
-function add_ui_ux(word) {
-  word = "Ui/ Ux designer.";
-  i = 0;
+// let changedTiltle = document.querySelector(".changedTiltle");
+// let time = 40;
+// let word, i;
 
-  var typeWriter = setInterval(function () {
-    changedTiltle.textContent += word[i];
-    i++;
-    if (i > word.length - 1) {
-      clearInterval(typeWriter);
-    }
-  }, time);
-}
-function add_web_d(word) {
-  word = "Web developer.";
-  i = 0;
+// function add_ui_ux(word) {
+//   word = "Ui/ Ux designer.";
+//   i = 0;
 
-  var typeWriter = setInterval(function () {
-    changedTiltle.textContent += word[i];
-    i++;
-    if (i > word.length - 1) {
-      clearInterval(typeWriter);
-    }
-  }, time);
-}
-function add_web_des(word) {
-  word = "Web designer.";
-  i = 0;
+//   var typeWriter = setInterval(function () {
+//     changedTiltle.textContent += word[i];
+//     i++;
+//     if (i > word.length - 1) {
+//       clearInterval(typeWriter);
+//     }
+//   }, time);
+// }
+// function add_web_d(word) {
+//   word = "Web developer.";
+//   i = 0;
 
-  var typeWriter = setInterval(function () {
-    changedTiltle.textContent += word[i];
-    i++;
-    if (i > word.length - 1) {
-      clearInterval(typeWriter);
-    }
-  }, time);
-}
+//   var typeWriter = setInterval(function () {
+//     changedTiltle.textContent += word[i];
+//     i++;
+//     if (i > word.length - 1) {
+//       clearInterval(typeWriter);
+//     }
+//   }, time);
+// }
+// function add_web_des(word) {
+//   word = "Web designer.";
+//   i = 0;
 
-function remove() {
-  word = changedTiltle.textContent;
-  i = 0;
-  changedTiltle.textContent = word;
-  let nnn = changedTiltle.textContent.split("");
+//   var typeWriter = setInterval(function () {
+//     changedTiltle.textContent += word[i];
+//     i++;
+//     if (i > word.length - 1) {
+//       clearInterval(typeWriter);
+//     }
+//   }, time);
+// }
 
-  let typeWriter = setInterval(function () {
-    nnn.pop();
+// function remove() {
+//   word = changedTiltle.textContent;
+//   i = 0;
+//   changedTiltle.textContent = word;
+//   let nnn = changedTiltle.textContent.split("");
 
-    changedTiltle.textContent = nnn.join("");
-    i++;
-    if (i > word.length - 1) {
-      clearInterval(typeWriter);
-    }
-  }, time);
-}
-function repeat() {
-  add_ui_ux();
-  setTimeout(remove, 1500);
-  setTimeout(add_web_d, 3000);
-  setTimeout(remove, 4500);
-  setTimeout(add_web_des, 6000);
-  setTimeout(remove, 7500);
-}
-repeat();
-setInterval(repeat, 9000);
+//   let typeWriter = setInterval(function () {
+//     nnn.pop();
+
+//     changedTiltle.textContent = nnn.join("");
+//     i++;
+//     if (i > word.length - 1) {
+//       clearInterval(typeWriter);
+//     }
+//   }, time);
+// }
+// function repeat() {
+//   add_ui_ux();
+//   setTimeout(remove, 1500);
+//   setTimeout(add_web_d, 3000);
+//   setTimeout(remove, 4500);
+//   setTimeout(add_web_des, 6000);
+//   setTimeout(remove, 7500);
+// }
+// repeat();
+// setInterval(repeat, 9000);
