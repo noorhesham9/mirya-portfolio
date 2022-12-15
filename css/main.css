@@ -81,7 +81,7 @@ a {
 }
 header {
   position: fixed;
-  z-index: 5;
+  z-index: 2000;
   width: 100%;
   -webkit-transition: 0.6s;
   transition: 0.6s;
@@ -455,6 +455,7 @@ header {
   overflow: hidden;
 }
 .landing .marg {
+  top: 0;
   position: absolute;
   height: 100%;
   max-width: 100%;
@@ -637,10 +638,115 @@ section .mainhead h2:after {
   background-color: #191919;
 }
 
+.about-me .aboutme-content .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.about-me .aboutme-content .image .about-image {
+  position: relative;
+}
+.about-me .aboutme-content .image .about-image:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  background: -webkit-gradient(linear, left top, right top, color-stop(5%, rgb(207, 156, 99)), to(#fff));
+  background: linear-gradient(to right, rgb(207, 156, 99) 5%, #fff 100%);
+}
 .about-me .aboutme-content .image .about-image img {
+  position: relative;
   border-radius: 6px;
   max-width: 350px;
   width: 100%;
   height: auto;
   vertical-align: middle;
+  z-index: 5;
+  top: 40px;
+  left: 30px;
+}
+@media (max-width: 570px) {
+  .about-me .aboutme-content .image .about-image img {
+    top: 0px;
+    left: 0px;
+  }
+}
+.about-me .aboutme-content .ContentandText {
+  position: relative;
+}
+.about-me .aboutme-content .ContentandText .about-info {
+  margin-top: 40px;
+  color: #bfbebe;
+}
+.about-me .aboutme-content .ContentandText .about-info h3 {
+  color: #cf9c63;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 1px;
+  line-height: 0.75;
+  margin: 0;
+  margin-top: 45px;
+}
+.about-me .aboutme-content .ContentandText .about-info h4 {
+  margin-top: 10px;
+  line-height: 1.3;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+}
+.about-me .aboutme-content .ContentandText .about-info p {
+  line-height: 1.8;
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+.about-me .aboutme-content .ContentandText .about-info p {
+  font-size: 13px;
+}
+.about-me .aboutme-content .ContentandText .about-info .personal-info {
+  -webkit-box-shadow: 0 1px 25px 1px #231a1d;
+          box-shadow: 0 1px 25px 1px #231a1d;
+  margin-top: 30px;
+  position: relative;
+  border: 3px solid #272525;
+  margin-right: 0;
+  padding: 20px 15px;
+}
+.about-me .aboutme-content .ContentandText .about-info .personal-info .info ul li {
+  font-size: 12px;
+  line-height: 3;
+  position: relative;
+  width: 100%;
+}
+.about-me .aboutme-content .ContentandText .about-info .personal-info .info ul li span {
+  margin-left: 0;
+  margin-right: 10px;
+  font-size: 13px;
+  font-weight: 600;
+}
+.about-me .aboutme-content .ContentandText .about-info .personal-info .social-icons {
+  position: static;
+  text-align: center;
+  margin-top: 14px;
+}
+.about-me .aboutme-content .ContentandText .about-info .personal-info .social-icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  margin-right: 14px;
+  margin-bottom: 14px;
+  -webkit-box-shadow: 0 0 15px 0 #231a1d;
+          box-shadow: 0 0 15px 0 #231a1d;
+  text-align: center;
+  background-color: #191919;
+  color: #3a3c3c;
+  border-radius: 50%;
+  cursor: pointer;
 }
