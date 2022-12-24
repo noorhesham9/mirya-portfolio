@@ -837,7 +837,8 @@ section {
       display: flex;
       gap: 60px;
       .image {
-        width: 41.66666667%;
+        width: 38%;
+        height: 100%;
         .about-image {
           img {
             max-width: 500px;
@@ -845,7 +846,7 @@ section {
         }
       }
       .ContentandText {
-        width: 58.33333333%;
+        width: 62%;
       }
     }
   }
