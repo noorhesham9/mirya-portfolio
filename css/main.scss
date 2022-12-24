@@ -830,3 +830,23 @@ section {
     }
   }
 }
+
+@media (min-width: 991px) {
+  .about-me {
+    .aboutme-content {
+      display: flex;
+      gap: 60px;
+      .image {
+        width: 41.66666667%;
+        .about-image {
+          img {
+            max-width: 500px;
+          }
+        }
+      }
+      .ContentandText {
+        width: 58.33333333%;
+      }
+    }
+  }
+}
