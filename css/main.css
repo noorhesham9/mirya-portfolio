@@ -86,6 +86,8 @@ header {
   -webkit-transition: 0.6s;
   transition: 0.6s;
   height: 100px;
+  -webkit-box-shadow: -1px -1px 20px 0px rgba(0, 0, 0, 0.3764705882);
+          box-shadow: -1px -1px 20px 0px rgba(0, 0, 0, 0.3764705882);
 }
 
 .headcontain {
@@ -873,5 +875,142 @@ section .mainhead h2:after {
   }
   .about-me .aboutme-content .ContentandText {
     width: 62%;
+  }
+}
+.MySkills {
+  background-image: url(../image/skills.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 120px 0;
+  position: relative;
+}
+.MySkills .overlaySkills {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0.8;
+}
+.MySkills .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+.MySkills .row > div {
+  width: 50%;
+}
+.MySkills .row > div > div {
+  padding-top: 34px;
+  position: relative;
+  margin-bottom: 15px;
+  width: 100%;
+  min-width: 50%;
+}
+.MySkills .row > div > div .precent {
+  position: absolute;
+  top: 0;
+  left: -15px;
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  color: #cf9c63;
+  background: #191919;
+  text-align: center;
+  line-height: 21px;
+  font-size: 14px;
+  -webkit-transition: all 1.1s ease-in-out;
+  transition: all 1.1s ease-in-out;
+}
+.MySkills .row > div > div .precent:before {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: #191919 transparent transparent;
+  display: block;
+}
+.MySkills .row > div > div .progress {
+  height: 5px;
+  background-color: #444;
+  border-radius: 0;
+  margin-bottom: 0;
+  -webkit-box-shadow: 0 1px 25px 1px #231a1d;
+          box-shadow: 0 1px 25px 1px #231a1d;
+}
+.MySkills .row > div > div h3 {
+  margin: 10px 0 0;
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  color: #a99f9f;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.MySkills .row .rightandtop .html .precent {
+  left: calc(95% - 15px);
+}
+.MySkills .row .rightandtop .html .progress .progressPar {
+  width: 95%;
+  height: 100%;
+  background-color: #cf9c63;
+}
+.MySkills .row .rightandtop .css .precent {
+  left: calc(80% - 15px);
+}
+.MySkills .row .rightandtop .css .progress .progressPar {
+  width: 80%;
+  height: 100%;
+  background-color: #cf9c63;
+}
+.MySkills .row .rightandtop .jquery .precent {
+  left: calc(90% - 15px);
+}
+.MySkills .row .rightandtop .jquery .progress .progressPar {
+  width: 90%;
+  height: 100%;
+  background-color: #cf9c63;
+}
+.MySkills .row .leftandbottom .javaScri .precent {
+  left: calc(75% - 15px);
+}
+.MySkills .row .leftandbottom .javaScri .progress .progressPar {
+  width: 75%;
+  height: 100%;
+  background-color: #cf9c63;
+}
+.MySkills .row .leftandbottom .php .precent {
+  left: calc(89% - 15px);
+}
+.MySkills .row .leftandbottom .php .progress .progressPar {
+  width: 89%;
+  height: 100%;
+  background-color: #cf9c63;
+}
+.MySkills .row .leftandbottom .wordpress .precent {
+  left: calc(85% - 15px);
+}
+.MySkills .row .leftandbottom .wordpress .progress .progressPar {
+  width: 85%;
+  height: 100%;
+  background-color: #cf9c63;
+}
+@media (max-width: 767px) {
+  .MySkills .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0;
+  }
+  .MySkills .row > div {
+    width: 100%;
   }
 }
