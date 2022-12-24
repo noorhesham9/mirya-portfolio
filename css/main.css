@@ -675,6 +675,15 @@ section .mainhead h2:after {
     left: 0px;
   }
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  .about-me .aboutme-content .image .about-image {
+    width: 100%;
+    max-width: 500px;
+  }
+  .about-me .aboutme-content .image .about-image img {
+    max-width: 500px;
+  }
+}
 .about-me .aboutme-content .ContentandText {
   position: relative;
 }
@@ -724,11 +733,55 @@ section .mainhead h2:after {
   position: relative;
   width: 100%;
 }
+.about-me .aboutme-content .ContentandText .about-info .personal-info .info ul li .point {
+  display: none;
+}
 .about-me .aboutme-content .ContentandText .about-info .personal-info .info ul li span {
   margin-left: 0;
   margin-right: 10px;
-  font-size: 13px;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.about-me .aboutme-content .ContentandText .about-info .personal-info .info ul li span.main-cat {
   font-weight: 600;
+  font-size: 13px;
+  letter-spacing: 0px;
+}
+@media (min-width: 570px) {
+  .about-me .aboutme-content .ContentandText .about-info .personal-info .info ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about-me .aboutme-content .ContentandText .about-info .personal-info .info ul li {
+    margin-left: 20px;
+    max-width: calc(50% - 20px);
+  }
+  .about-me .aboutme-content .ContentandText .about-info .personal-info .info ul li .point {
+    display: block;
+    position: absolute;
+    left: -20px;
+    width: 15px;
+    height: 15px;
+    top: 50%;
+    background-color: #191919;
+    -webkit-transform: translateX(-50%) translatey(-50%) rotate(45deg);
+            transform: translateX(-50%) translatey(-50%) rotate(45deg);
+    -webkit-box-shadow: 0 1px 25px 1px #231a1d;
+            box-shadow: 0 1px 25px 1px #231a1d;
+  }
+  .about-me .aboutme-content .ContentandText .about-info .personal-info .info ul li .point::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 5px;
+    height: 5px;
+    background-color: #cf9c63;
+  }
 }
 .about-me .aboutme-content .ContentandText .about-info .personal-info .social-icons {
   position: static;
@@ -749,4 +802,57 @@ section .mainhead h2:after {
   color: #3a3c3c;
   border-radius: 50%;
   cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.about-me .aboutme-content .ContentandText .about-info .personal-info .social-icons .face:hover {
+  background-color: #3b5998;
+  color: #fff;
+}
+.about-me .aboutme-content .ContentandText .about-info .personal-info .social-icons .twitter:hover {
+  background-color: #1da1f2;
+  color: #fff;
+}
+.about-me .aboutme-content .ContentandText .about-info .personal-info .social-icons .googleblus:hover {
+  background-color: #db4437;
+  color: #fff;
+}
+.about-me .aboutme-content .ContentandText .about-info .personal-info .social-icons .linked:hover {
+  background-color: #0077b5;
+  color: #fff;
+}
+.about-me .aboutme-content .ContentandText .about-info .personal-info .social-icons .behance:hover {
+  background-color: #0057ff;
+  color: #fff;
+}
+@media (min-width: 570px) {
+  .about-me .aboutme-content .ContentandText .about-info .personal-info .social-icons {
+    margin-top: 0px;
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    right: -19px;
+  }
+  .about-me .aboutme-content .ContentandText .about-info .personal-info .social-icons a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 0px;
+    line-height: 31px;
+    font-size: 15px;
+    margin-bottom: 4px;
+  }
+}
+@media (min-width: 570px) {
+  .about-me .aboutme-content .ContentandText .about-info .personal-info {
+    padding: 33px 20px;
+  }
 }
