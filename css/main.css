@@ -1014,3 +1014,104 @@ section .mainhead h2:after {
     width: 100%;
   }
 }
+
+.services .container .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.services .container .content > div {
+  width: calc(33.333% - 30px);
+  padding: 38px 20px;
+  border-left: 3px solid #272525;
+  border-bottom: 3px solid #272525;
+  -webkit-box-shadow: 0 0 15px 0 #231a1d;
+          box-shadow: 0 0 15px 0 #231a1d;
+  margin-bottom: 30px;
+  margin-right: 15px;
+  margin-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.services .container .content > div .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0 25px;
+}
+.services .container .content > div .head .text {
+  color: #cf9c63;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-family: "Raleway", sans-serif;
+  position: relative;
+}
+.services .container .content > div .head .text::before {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  display: inline-block;
+  width: 50px;
+  height: 1px;
+  background-color: #2d2a2a;
+}
+.services .container .content > div .head .icon {
+  -webkit-box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 14px 0 rgba(0, 0, 0, 0.4);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background-color: #2d2a2a;
+  color: #bfbebe;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+}
+.services .container .content > div .head .icon i {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+.services .container .content > div p {
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  margin: 0 0 10px;
+  color: #bfbebe;
+  font-size: 14px;
+}
+@media (min-width: 767px) and (max-width: 991px) {
+  .services .container .content .wepdesign,
+.services .container .content .wepdevelopment,
+.services .container .content .photography {
+    margin-left: 0;
+  }
+  .services .container .content .pranding,
+.services .container .content .graphic,
+.services .container .content .creativity {
+    margin-right: 0;
+  }
+  .services .container .content > div {
+    width: calc(50% - 15px);
+  }
+}
+@media (max-width: 767px) {
+  .services .container .content > div {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+}
