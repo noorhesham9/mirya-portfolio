@@ -1015,6 +1015,9 @@ section .mainhead h2:after {
   }
 }
 
+.services {
+  padding-bottom: 90px;
+}
 .services .container .content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1114,4 +1117,328 @@ section .mainhead h2:after {
     margin-right: 0;
     width: 100%;
   }
+}
+
+.resume {
+  background-color: #2d2a2a;
+}
+.resume .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.resume .content .education {
+  width: 50%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.resume .content .education .title {
+  position: relative;
+  left: -9px;
+  margin-bottom: 20px;
+}
+.resume .content .education .title i {
+  color: #cf9c63;
+  margin-right: 10px;
+  vertical-align: middle;
+  font-size: 2em;
+}
+.resume .content .education .title h3 {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  vertical-align: middle;
+  letter-spacing: 1px;
+}
+.resume .content .education .detail {
+  position: relative;
+  padding: 40px 0;
+  padding-left: 25px;
+}
+.resume .content .education .detail:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 3px;
+  height: 100%;
+  width: 3px;
+  border: 1.7px solid #312e2e;
+  background-color: #312e2e;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 1px 25px 1px #231f21;
+          box-shadow: 0 1px 25px 1px #231f21;
+}
+.resume .content .education .Bachelor,
+.resume .content .education .Master {
+  margin-bottom: 30px;
+}
+.resume .content .education .Bachelor .year,
+.resume .content .education .Master .year {
+  position: relative;
+  display: inline-block;
+  border: 3px solid #312e2e;
+  border-radius: 4px;
+  padding: 4px 18px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  -webkit-box-shadow: 0 1px 25px 1px #231f21;
+          box-shadow: 0 1px 25px 1px #231f21;
+  color: #bfbebe;
+  font-family: "Open Sans", sans-serif;
+}
+.resume .content .education .Bachelor .year::before,
+.resume .content .education .Master .year::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  left: -30px;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+  background-color: #191919;
+}
+.resume .content .education .Bachelor .year::after,
+.resume .content .education .Master .year::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #cf9c63;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+  left: -25px;
+  top: 50%;
+}
+.resume .content .education .Bachelor .resume-details,
+.resume .content .education .Master .resume-details {
+  position: relative;
+  border-right: 3px solid #312e2e;
+  border-bottom: 3px solid #312e2e;
+  border-radius: 4px;
+  padding: 20px;
+  -webkit-box-shadow: 0 1px 25px 1px #231f21;
+          box-shadow: 0 1px 25px 1px #231f21;
+}
+.resume .content .education .Bachelor .resume-details .head h4,
+.resume .content .education .Master .resume-details .head h4 {
+  display: inline-block;
+  color: #cf9c63;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-family: "Open Sans", sans-serif;
+}
+.resume .content .education .Bachelor .resume-details .head i,
+.resume .content .education .Master .resume-details .head i {
+  position: absolute;
+  right: 8px;
+  top: 18px;
+  color: #383535;
+  font-size: 2em;
+}
+.resume .content .education .Bachelor .resume-details p,
+.resume .content .education .Master .resume-details p {
+  line-height: 1.8;
+  padding-top: 15px;
+  border-top: 1px solid #312e2e;
+  margin: 0;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #bfbebe;
+  font-family: "Open Sans", sans-serif;
+}
+.resume .content .experience {
+  width: 50%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.resume .content .experience .title {
+  position: relative;
+  left: -9px;
+  margin-bottom: 20px;
+}
+.resume .content .experience .title i {
+  color: #cf9c63;
+  margin-right: 10px;
+  vertical-align: middle;
+  font-size: 2em;
+}
+.resume .content .experience .title h3 {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  vertical-align: middle;
+  letter-spacing: 1px;
+}
+.resume .content .experience .detail {
+  position: relative;
+  padding: 40px 0;
+  padding-left: 25px;
+}
+.resume .content .experience .detail:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 3px;
+  height: 100%;
+  width: 3px;
+  border: 1.7px solid #312e2e;
+  background-color: #312e2e;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 1px 25px 1px #231f21;
+          box-shadow: 0 1px 25px 1px #231f21;
+}
+.resume .content .experience .uxui,
+.resume .content .experience .frontend {
+  margin-bottom: 30px;
+}
+.resume .content .experience .uxui .year,
+.resume .content .experience .frontend .year {
+  position: relative;
+  display: inline-block;
+  border: 3px solid #312e2e;
+  border-radius: 4px;
+  padding: 4px 18px;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  -webkit-box-shadow: 0 1px 25px 1px #231f21;
+          box-shadow: 0 1px 25px 1px #231f21;
+  color: #bfbebe;
+  font-family: "Open Sans", sans-serif;
+}
+.resume .content .experience .uxui .year::before,
+.resume .content .experience .frontend .year::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  left: -30px;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+  background-color: #191919;
+}
+.resume .content .experience .uxui .year::after,
+.resume .content .experience .frontend .year::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #cf9c63;
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+  left: -25px;
+  top: 50%;
+}
+.resume .content .experience .uxui .resume-details,
+.resume .content .experience .frontend .resume-details {
+  position: relative;
+  border-right: 3px solid #312e2e;
+  border-bottom: 3px solid #312e2e;
+  border-radius: 4px;
+  padding: 20px;
+  -webkit-box-shadow: 0 1px 25px 1px #231f21;
+          box-shadow: 0 1px 25px 1px #231f21;
+}
+.resume .content .experience .uxui .resume-details .head h4,
+.resume .content .experience .frontend .resume-details .head h4 {
+  display: inline-block;
+  color: #cf9c63;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-family: "Open Sans", sans-serif;
+  max-width: 90%;
+}
+.resume .content .experience .uxui .resume-details .head i,
+.resume .content .experience .frontend .resume-details .head i {
+  position: absolute;
+  right: 8px;
+  top: 18px;
+  color: #383535;
+  font-size: 2em;
+}
+.resume .content .experience .uxui .resume-details p,
+.resume .content .experience .frontend .resume-details p {
+  line-height: 1.8;
+  padding-top: 15px;
+  border-top: 1px solid #312e2e;
+  margin: 0;
+  margin-top: 15px;
+  font-size: 13px;
+  color: #bfbebe;
+  font-family: "Open Sans", sans-serif;
+}
+@media (max-width: 767px) {
+  .resume .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .resume .content .education,
+.resume .content .experience {
+    width: 100%;
+    padding: 0;
+  }
+}
+.resume .download {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 50px 0 0 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.resume .download a {
+  -webkit-box-shadow: 0 1px 25px 1px #231f21;
+          box-shadow: 0 1px 25px 1px #231f21;
+  background-color: #2d2a2a;
+  color: #bfbebe;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-align: center;
+  letter-spacing: 1px;
+  padding: 12px 16px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
+}
+.resume .download a span {
+  position: relative;
+  z-index: 2;
+}
+.resume .download a:before {
+  content: "";
+  background-color: #cf9c63;
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 300px;
+  z-index: 1;
+  -webkit-transform: translate(-50%, -50%) scale(0) rotate(45deg);
+          transform: translate(-50%, -50%) scale(0) rotate(45deg);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.resume .download a:hover {
+  color: white;
+}
+.resume .download a:hover:before {
+  -webkit-transform: translate(-50%, -50%) scale(1) rotate(45deg);
+          transform: translate(-50%, -50%) scale(1) rotate(45deg);
 }
