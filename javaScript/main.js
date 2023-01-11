@@ -74,6 +74,10 @@ new Typed("#typed", {
   showCursor: false,
 });
 
+const d = new Date();
+let year = d.getFullYear();
+document.getElementById("year").innerHTML = year;
+
 //كود التايب فنكشن بس فيه مشاكل ف استخدمنا الجاهز
 
 //**************
