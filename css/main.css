@@ -900,9 +900,11 @@ section .mainhead h2:after {
   display: -ms-flexbox;
   display: flex;
   gap: 30px;
+  max-width: 100%;
+  margin: auto;
 }
 .MySkills .row > div {
-  width: 50%;
+  width: calc(50% - 15px);
 }
 .MySkills .row > div > div {
   padding-top: 34px;
@@ -1749,4 +1751,656 @@ footer .allRight a {
   letter-spacing: 1px;
   line-height: 1.8;
   margin-left: 4px;
+}
+
+.testimonials .container {
+  overflow: hidden;
+}
+.testimonials .content .testi {
+  width: 750px;
+  margin: auto;
+  max-width: 100%;
+}
+.testimonials .content .testi .item {
+  position: relative;
+  padding: 40px;
+  border-left: 3px solid #272525;
+  border-right: 3px solid #272525;
+  margin: 0 20px 30px;
+  -webkit-box-shadow: 0 1px 25px 1px #231a1d;
+          box-shadow: 0 1px 25px 1px #231a1d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.testimonials .content .testi .item .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.testimonials .content .testi .item .info .image {
+  width: 65px;
+  height: 65px;
+  margin-right: 20px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.testimonials .content .testi .item .info .image img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  border: none;
+}
+.testimonials .content .testi .item .info .client-info h3 {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin: 0;
+  margin-top: 12px;
+  color: #fff;
+}
+.testimonials .content .testi .item .info .client-info span {
+  display: inline-block;
+  margin: 7px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #cf9c63;
+}
+.testimonials .content .testi .item .description {
+  margin-top: 20px;
+  position: relative;
+}
+.testimonials .content .testi .item .description .lineR {
+  position: absolute;
+  top: 24px;
+  left: -40px;
+  width: 24px;
+  height: 4px;
+  background-color: #272525;
+}
+.testimonials .content .testi .item .description .lineL {
+  position: absolute;
+  bottom: 10px;
+  right: -40px;
+  width: 24px;
+  height: 4px;
+  background-color: #272525;
+}
+.testimonials .content .testi .item .description:before {
+  content: "\f10d";
+  top: 12px;
+  left: -20px;
+  font-family: "FontAwesome";
+  position: absolute;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
+  background-color: #272525;
+  text-align: center;
+  color: #cf9c63;
+  -webkit-box-shadow: 0 1px 25px 1px #231a1d;
+          box-shadow: 0 1px 25px 1px #231a1d;
+}
+.testimonials .content .testi .item .description:after {
+  content: "\f10e";
+  bottom: -2px;
+  right: -20px;
+  font-family: "FontAwesome";
+  position: absolute;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 28px;
+  background-color: #272525;
+  text-align: center;
+  color: #cf9c63;
+  -webkit-box-shadow: 0 1px 25px 1px #231a1d;
+          box-shadow: 0 1px 25px 1px #231a1d;
+}
+.testimonials .content .testi .item .description p {
+  font-size: 15px;
+  line-height: 1.8;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-top: 1px solid #272525;
+  color: #bfbebe;
+}
+@media (max-width: 575px) {
+  .testimonials .content .testi .item {
+    padding: 20px;
+  }
+  .testimonials .content .testi .info .client-info h3 {
+    font-size: 14px !important;
+  }
+  .testimonials .content .testi .description {
+    margin-top: 10px !important;
+  }
+  .testimonials .content .testi .description p {
+    font-size: 13px !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .testimonials .content .testi .description .lineL {
+    display: none !important;
+  }
+  .testimonials .content .testi .description .lineR {
+    display: none !important;
+  }
+  .testimonials .content .testi .description:before {
+    display: none !important;
+  }
+  .testimonials .content .testi .description:after {
+    display: none !important;
+  }
+}
+
+.owl-nav {
+  visibility: hidden !important;
+}
+
+.owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+}
+
+.owl-item {
+  width: 100%;
+}
+
+.owl-dots .owl-dot {
+  position: relative;
+  -webkit-transform: rotate(45deg) !important;
+          transform: rotate(45deg) !important;
+}
+.owl-dots .owl-dot span {
+  position: relative;
+  border-radius: 0px !important;
+  width: 10px !important;
+  height: 10px !important;
+  background-color: #191919 !important;
+}
+.owl-dots .owl-dot.active span::before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 3px;
+  left: 3px;
+  width: 4px;
+  height: 4px;
+  background-color: #cf9c63;
+}
+
+.MyBlog {
+  background-color: #2d2a2a;
+  color: #bfbebe;
+}
+.MyBlog .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.MyBlog .content .blog {
+  border-right: 3px solid #312e2e;
+  border-bottom: 3px solid #312e2e;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 1px 25px 1px #231f21;
+          box-shadow: 0 1px 25px 1px #231f21;
+  width: calc(33.3333% - 14px);
+  min-width: 220px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.MyBlog .content .blog .image {
+  width: 100%;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  aspect-ratio: 1.4279;
+}
+.MyBlog .content .blog .image img {
+  max-width: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.MyBlog .content .blog:hover .image img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+.MyBlog .content .blog .post-content {
+  padding: 20px;
+}
+.MyBlog .content .blog .post-content .post-title a {
+  display: block;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  margin: 0 0 5px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  text-decoration: none;
+}
+.MyBlog .content .blog .post-content .post-title a:hover {
+  text-decoration: none;
+  color: #cf9c63;
+}
+.MyBlog .content .blog .post-content .post-info li {
+  display: inline-block;
+  font-size: 12px;
+  margin-right: 10px;
+  color: #bfbebe;
+}
+.MyBlog .content .blog .post-content .post-info li i {
+  margin-right: 2px;
+}
+.MyBlog .content .blog .post-content .post-info li a {
+  display: inline-block;
+  font-size: 12px;
+  color: #bfbebe;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  text-decoration: none;
+}
+.MyBlog .content .blog .post-content .post-info li a:hover {
+  text-decoration: none;
+  color: #cf9c63;
+}
+.MyBlog .content .blog .post-content .post-text p {
+  line-height: 1.8;
+  padding-top: 15px;
+  margin: 15px 0 0;
+  border-top: 1px solid #312e2e;
+  font-size: 14px;
+}
+.MyBlog .content .blog .post-footer {
+  position: relative;
+  padding: 20px;
+  background-color: #232222;
+}
+.MyBlog .content .blog .post-footer:before {
+  content: "";
+  position: absolute;
+  bottom: 28px;
+  right: 0;
+  display: inline-block;
+  width: 20px;
+  height: 4px;
+  background-color: #2d2a2a;
+  -webkit-box-shadow: 0 1px 25px 1px #231a1d;
+          box-shadow: 0 1px 25px 1px #231a1d;
+}
+.MyBlog .content .blog .post-footer .post-more {
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+.MyBlog .content .blog .post-footer .post-more i {
+  margin-left: 4px;
+  font-size: 12px;
+}
+.MyBlog .content .blog .post-footer .post-more:hover {
+  text-decoration: none;
+  color: #cf9c63;
+}
+.MyBlog .content .blog .post-footer .post-category {
+  position: absolute;
+  bottom: 13px;
+  right: 20px;
+  display: inline-block;
+  padding: 6px 12px;
+  background-color: #2d2a2a;
+  border-right: 2px solid #312e2e;
+  border-bottom: 2px solid #312e2e;
+  border-radius: 4px;
+  text-align: center;
+  color: #cf9c63;
+  margin: 0;
+  -webkit-box-shadow: 0 1px 25px 1px #231a1d;
+          box-shadow: 0 1px 25px 1px #231a1d;
+}
+.MyBlog .content .blog .post-footer .post-category .post-categories {
+  margin-bottom: 0;
+}
+.MyBlog .content .blog .post-footer .post-category a {
+  color: #cf9c63;
+  text-decoration: none;
+}
+@media (max-width: 991px) {
+  .MyBlog .content .blog {
+    width: 100%;
+  }
+}
+
+.getInTouch .infor {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 20px;
+}
+.getInTouch .infor > div {
+  width: calc(33.3333% - 14px);
+  padding-right: 15px;
+  padding-left: 15px;
+  position: relative;
+  padding: 30px 20px;
+  border-right: 3px solid #272525;
+  border-bottom: 3px solid #272525;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 1px 25px 1px #231a1d;
+          box-shadow: 0 1px 25px 1px #231a1d;
+}
+.getInTouch .infor > div i {
+  position: absolute;
+  top: calc(50% - 4px);
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  right: 18px;
+  display: inline-block;
+  color: #383535;
+  font-size: 40px;
+}
+.getInTouch .infor > div h4 {
+  position: relative;
+  display: inline-block;
+  font-size: 16px;
+  letter-spacing: 0.6px;
+  margin: 20px 0;
+  margin-top: 6px;
+  padding: 10px 12px;
+  background-color: #2d2a2a;
+  border-right: 2px solid #312e2e;
+  border-bottom: 2px solid #312e2e;
+  border-radius: 4px;
+  text-align: center;
+  color: #cf9c63;
+}
+.getInTouch .infor > div h4::before {
+  content: "";
+  position: absolute;
+  bottom: 16px;
+  left: -20px;
+  display: inline-block;
+  width: 20px;
+  height: 4px;
+  background-color: #2d2a2a;
+  -webkit-box-shadow: 0 1px 25px 1px #231a1d;
+          box-shadow: 0 1px 25px 1px #231a1d;
+}
+.getInTouch .infor > div p {
+  margin: 0 0 10px;
+  color: #bfbebe;
+  font-size: 14px;
+}
+.getInTouch .formContact {
+  background-color: #2d2a2a;
+  padding: 50px 20px;
+  margin-top: 20px;
+  border-right: 3px solid #272525;
+  border-bottom: 3px solid #272525;
+  -webkit-box-shadow: 0 1px 25px 1px #231a1d;
+          box-shadow: 0 1px 25px 1px #231a1d;
+}
+.getInTouch .formContact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.getInTouch .formContact form .half {
+  width: 50%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.getInTouch .formContact form .half .form-group {
+  position: relative;
+  margin-bottom: 40px;
+}
+.getInTouch .formContact form .half .form-group input {
+  background-color: #2d2a2a;
+  display: block;
+  color: #fff;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #3e3c3c;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0;
+  height: 46px;
+  padding: 12px;
+  direction: ltr;
+  -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  font-size: 14px;
+  line-height: 1.42857143;
+}
+.getInTouch .formContact form .half .form-group label {
+  position: absolute;
+  top: 13px;
+  left: 12px;
+  width: 100%;
+  margin-bottom: 0;
+  font-weight: 400;
+  cursor: text;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #bfbebe;
+  font-size: 14px;
+}
+@media (max-width: 768px) {
+  .getInTouch .formContact form .half {
+    width: 100%;
+  }
+}
+.getInTouch .formContact form .full {
+  width: 100%;
+  position: relative;
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.getInTouch .formContact form .full .form-group {
+  position: relative;
+  margin-bottom: 40px;
+}
+.getInTouch .formContact form .full .form-group textarea:valid ~ label {
+  top: -16px;
+  left: 0;
+  color: #cf9c63;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+.getInTouch .formContact form .full .form-group textarea:focus ~ label {
+  top: -16px;
+  left: 0;
+  color: #cf9c63;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+.getInTouch .formContact form .full .form-group input,
+.getInTouch .formContact form .full .form-group textarea {
+  background-color: #2d2a2a;
+  display: block;
+  color: #fff;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #3e3c3c;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0;
+  height: 46px;
+  padding: 12px;
+  direction: ltr;
+  -webkit-transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s, -webkit-box-shadow ease-in-out 0.15s;
+  font-size: 14px;
+  line-height: 1.42857143;
+}
+.getInTouch .formContact form .full .form-group textarea {
+  height: 120px;
+}
+.getInTouch .formContact form .full .form-group label {
+  position: absolute;
+  top: 13px;
+  left: 12px;
+  width: 100%;
+  margin-bottom: 0;
+  font-weight: 400;
+  cursor: text;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: #bfbebe;
+  font-size: 14px;
+}
+.getInTouch .formContact form .sendMsg {
+  width: 100%;
+}
+.getInTouch .formContact form .sendMsg button {
+  width: 100%;
+  background-color: #cf9c63;
+  color: #fff;
+  padding: 12px;
+  border-radius: 0;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  border: 1px solid transparent;
+  outline: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.42857143;
+  text-align: center;
+  -webkit-box-shadow: 0 1px 25px 1px #231a1d;
+          box-shadow: 0 1px 25px 1px #231a1d;
+}
+.getInTouch .formContact form .sendMsg button:hover {
+  background-color: #2d2a2a;
+  color: #cf9c63;
+}
+
+@media (max-width: 767px) {
+  .getInTouch .infor {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .getInTouch .infor > div {
+    width: 100%;
+  }
+}
+.login-box {
+  width: 400px;
+  padding: 40px;
+  background: rgb(0, 0, 0);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.getInTouch .formContact .half .form-group input:focus ~ label {
+  top: -16px;
+  left: 0;
+  color: #cf9c63;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.getInTouch .formContact .full .form-group input:focus ~ label {
+  top: -16px;
+  left: 0;
+  color: #cf9c63;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.getInTouch .formContact .half .form-group input:valid ~ label {
+  top: -16px;
+  left: 0;
+  color: #cf9c63;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+}
+
+.getInTouch .formContact .full .form-group input:valid ~ label {
+  top: -16px;
+  left: 0;
+  color: #cf9c63;
+  font-size: 12px;
+  letter-spacing: 0.5px;
 }

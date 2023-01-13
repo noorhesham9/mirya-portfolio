@@ -78,6 +78,23 @@ const d = new Date();
 let year = d.getFullYear();
 document.getElementById("year").innerHTML = year;
 
+// for testimonials
+
+$(".owl-carousel").owlCarousel({
+  loop: true,
+  margin: 10,
+  dots: true,
+  nav: false,
+  autoplay: true,
+  smartSpeed: 1700,
+  autoplayTimeout: 5000,
+  responsive: {
+    0: {
+      items: 1,
+    },
+  },
+});
+
 //كود التايب فنكشن بس فيه مشاكل ف استخدمنا الجاهز
 
 //**************
