@@ -61,6 +61,9 @@ a {
   color: white;
   text-decoration: none;
 }
+a:hover {
+  text-decoration: none;
+}
 
 @-webkit-keyframes headborder {
   from {
@@ -115,6 +118,9 @@ header {
   display: -ms-flexbox;
   display: flex;
   gap: 5px;
+}
+.headcontain .navfordesk ul {
+  margin: 0;
 }
 .headcontain .navfordesk ul a {
   display: -webkit-box;

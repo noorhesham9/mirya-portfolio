@@ -56,6 +56,9 @@ ul {
 a {
   color: white;
   text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
 }
 // key frames
 @keyframes headborder {
@@ -99,6 +102,7 @@ header {
   }
   .navfordesk {
     ul {
+      margin: 0;
       a {
         display: flex;
         align-items: center;
