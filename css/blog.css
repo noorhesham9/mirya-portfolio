@@ -523,6 +523,11 @@ header {
   margin-bottom: 20px;
   font-family: "Raleway", sans-serif;
 }
+@media (max-width: 350px) {
+  .landing .container .title-head h1 {
+    font-size: 34px;
+  }
+}
 .landing .container ul li {
   position: relative;
   display: inline-block;
@@ -663,6 +668,9 @@ footer .allRight a {
   -webkit-transition: all 0.5s ease-in-out !important;
   transition: all 0.5s ease-in-out !important;
 }
+.MyBlog .content .col4 .categories ul li a:hover {
+  color: #cf9c63;
+}
 .MyBlog .content .col4 .recent ul .thumbnail-post-w {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -689,6 +697,7 @@ footer .allRight a {
   font-family: "Raleway", sans-serif;
 }
 .MyBlog .content .col4 .recent ul .thumbnail-post-w .widget-data h4 a {
+  font-family: "Raleway", sans-serif;
   display: inline-block;
   font-size: 15px;
   line-height: 1.5;
@@ -699,6 +708,9 @@ footer .allRight a {
   -webkit-transition: all 0.5s ease-in-out !important;
   transition: all 0.5s ease-in-out !important;
 }
+.MyBlog .content .col4 .recent ul .thumbnail-post-w .widget-data h4 a:hover {
+  color: #cf9c63;
+}
 .MyBlog .content .col4 .recent ul .thumbnail-post-w .widget-data span {
   font-size: 14px;
   color: #dedddc;
@@ -708,16 +720,27 @@ footer .allRight a {
   -webkit-transition: all 0.5s ease-in-out !important;
   transition: all 0.5s ease-in-out !important;
 }
+.MyBlog .content .col4 .recent ul .thumbnail-post-w .widget-data span a {
+  -webkit-transition: all 0.5s ease-in-out !important;
+  transition: all 0.5s ease-in-out !important;
+}
+.MyBlog .content .col4 .recent ul .thumbnail-post-w .widget-data span a:hover {
+  color: #cf9c63;
+}
 .MyBlog .content .col4 .tags .tagcloud a {
   display: inline-block;
   background-color: transparent;
   color: #dedddc;
   font-size: 15px !important;
-  padding: 7px 13px;
+  padding: 9px 13.5px;
   border: 1px solid #3a3737;
   margin: 5px;
   -webkit-transition: all 0.5s ease-in-out !important;
   transition: all 0.5s ease-in-out !important;
+}
+.MyBlog .content .col4 .tags .tagcloud a:hover {
+  background-color: #cf9c63;
+  color: #fff;
 }
 .MyBlog .content .col4 .search {
   padding: 0;
@@ -891,4 +914,18 @@ footer .allRight a {
 .MyBlog .content .col8 .page-numbers a:hover {
   background: #cf9c63;
   color: #fff;
+}
+@media (max-width: 991px) {
+  .MyBlog .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .MyBlog .content .col4 {
+    width: 100%;
+  }
+  .MyBlog .content .col8 {
+    width: 100%;
+  }
 }
