@@ -888,14 +888,23 @@ footer {
               }
             }
           }
+          @media (max-width: 400px) {
+            &::before {
+              display: none;
+            }
+            .post-categories {
+              display: none;
+            }
+          }
         }
       }
       .post-navigation {
         overflow: hidden;
         display: flex;
         justify-content: space-between;
-
+        flex-wrap: wrap;
         a {
+          // width: fit-content;
           background: transparent;
           border: 1px solid #383636;
           padding: 11px 30px;
@@ -906,6 +915,17 @@ footer {
           &:hover {
             background: #cf9c63;
             color: #fff;
+          }
+        }
+      }
+      @media (max-width: 370px) {
+        .post-navigation {
+          justify-content: center;
+
+          a {
+            font-size: 17px;
+            margin-bottom: 10px;
+            width: 160px;
           }
         }
       }
@@ -971,6 +991,16 @@ footer {
                 font-weight: 500;
               }
             }
+            @media (max-width: 400px) {
+              .vcard {
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                span {
+                  margin-top: 10px;
+                }
+              }
+            }
             .commentdate {
               display: inline-block;
               color: #dedddc;
@@ -994,6 +1024,7 @@ footer {
               font-size: 18px;
               display: flex;
               align-items: center;
+
               img {
                 border-radius: 50%;
                 margin-right: 10px;
@@ -1005,6 +1036,16 @@ footer {
                 text-transform: capitalize;
                 color: #fff;
                 font-weight: 500;
+              }
+            }
+            @media (max-width: 400px) {
+              .vcard {
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                span {
+                  margin-top: 10px;
+                }
               }
             }
             .reply {
@@ -1125,6 +1166,19 @@ footer {
               line-height: normal;
               outline: none;
               text-align: center;
+            }
+          }
+        }
+        @media (max-width: 767px) {
+          .nameandemail {
+            flex-direction: column;
+            .name {
+              width: 100%;
+              padding: 0;
+            }
+            .email {
+              width: 100%;
+              padding: 0;
             }
           }
         }

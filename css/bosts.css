@@ -929,6 +929,14 @@ footer .allRight a {
   text-decoration: none;
   text-transform: capitalize;
 }
+@media (max-width: 400px) {
+  .MyBlog .content .col8 .blog .post-footer::before {
+    display: none;
+  }
+  .MyBlog .content .col8 .blog .post-footer .post-categories {
+    display: none;
+  }
+}
 .MyBlog .content .col8 .post-navigation {
   overflow: hidden;
   display: -webkit-box;
@@ -937,6 +945,8 @@ footer .allRight a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .MyBlog .content .col8 .post-navigation a {
   background: transparent;
@@ -951,6 +961,18 @@ footer .allRight a {
 .MyBlog .content .col8 .post-navigation a:hover {
   background: #cf9c63;
   color: #fff;
+}
+@media (max-width: 370px) {
+  .MyBlog .content .col8 .post-navigation {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .MyBlog .content .col8 .post-navigation a {
+    font-size: 17px;
+    margin-bottom: 10px;
+    width: 160px;
+  }
 }
 .MyBlog .content .col8 .comments {
   margin-top: 60px;
@@ -1020,6 +1042,23 @@ footer .allRight a {
   color: #fff;
   font-weight: 500;
 }
+@media (max-width: 400px) {
+  .MyBlog .content .col8 .comments .allcomments .father .vcard {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .MyBlog .content .col8 .comments .allcomments .father .vcard span {
+    margin-top: 10px;
+  }
+}
 .MyBlog .content .col8 .comments .allcomments .father .commentdate {
   display: inline-block;
   color: #dedddc;
@@ -1059,6 +1098,23 @@ footer .allRight a {
   text-transform: capitalize;
   color: #fff;
   font-weight: 500;
+}
+@media (max-width: 400px) {
+  .MyBlog .content .col8 .comments .allcomments .child .vcard {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .MyBlog .content .col8 .comments .allcomments .child .vcard span {
+    margin-top: 10px;
+  }
 }
 .MyBlog .content .col8 .comments .allcomments .child .reply {
   position: absolute;
@@ -1184,6 +1240,22 @@ footer .allRight a {
   line-height: normal;
   outline: none;
   text-align: center;
+}
+@media (max-width: 767px) {
+  .MyBlog .content .col8 .comment-respond .nameandemail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .MyBlog .content .col8 .comment-respond .nameandemail .name {
+    width: 100%;
+    padding: 0;
+  }
+  .MyBlog .content .col8 .comment-respond .nameandemail .email {
+    width: 100%;
+    padding: 0;
+  }
 }
 .MyBlog .content .col8 .comment-respond .website {
   font-size: 16px;
